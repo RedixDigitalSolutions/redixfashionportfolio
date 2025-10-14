@@ -1,0 +1,154 @@
+.videoCard {
+  background: rgba(20, 20, 30, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.videoCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.videoCard:hover {
+  transform: translateY(-10px);
+  border-color: rgba(138, 43, 226, 0.5);
+  box-shadow: 0 20px 50px rgba(138, 43, 226, 0.3);
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Aspect Ratio Classes */
+.aspectRatio9_16 {
+  padding-top: 177.78%;
+  /* 16/9 * 100 = 177.78% for 9:16 */
+}
+
+.aspectRatio16_9 {
+  padding-top: 56.25%;
+  /* 9/16 * 100 = 56.25% for 16:9 */
+}
+
+.aspectRatio1_1 {
+  padding-top: 100%;
+  /* 1:1 square */
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.visible {
+  opacity: 1;
+}
+
+.playButton {
+  background: rgba(138, 43, 226, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+  padding-left: 4px;
+  /* Adjust play icon centering */
+}
+
+.playButton:hover {
+  background: rgba(138, 43, 226, 1);
+  transform: scale(1.1);
+}
+
+.typeBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(138, 43, 226, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.info {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(65, 105, 225, 0.1));
+}
+
+.client {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+
+  .playButton svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .typeBadge {
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .info {
+    padding: 1rem;
+  }
+
+  .client {
+    font-size: 1rem;
+  }
+
+  .category {
+    font-size: 0.85rem;
+  }
+}
