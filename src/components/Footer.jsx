@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaWhatsapp, FaLinkedin } from 'react-icons/fa'
 import styles from './Footer.module.css';
 
 // Import logo from public folder
-const logo = '/redix_logo.png';
+const logo = '/redixfashionportfolio/redix_logo.png';
 
 const Footer = () => {
   return (

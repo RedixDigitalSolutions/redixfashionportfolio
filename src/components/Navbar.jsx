@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 // Import logo from public folder
-const logo = '/redix_logo.png';
+const logo = '/redixfashionportfolio/redix_logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
