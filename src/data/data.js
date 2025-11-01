@@ -22,20 +22,7 @@ export const fashionVideos = [
     category: 'Fashion Store',
     type: 'reel' // 9:16
   },
-  {
-    id: 5,
-    path: '/redixfashionportfolio/videos/ssstik.io_@nude_style_marsa_1760406028218.mp4',
-    client: 'Nude Style Marsa',
-    category: 'Fashion Store',
-    type: 'animated' // 9:16
-  },
-  {
-    id: 6,
-    path: '/redixfashionportfolio/videos/ssstik.io_@nude_style_marsa_1760406037133.mp4',
-    client: 'Nude Style Marsa',
-    category: 'Fashion Store',
-    type: 'animated' // 9:16
-  },
+
   {
     id: 7,
     path: '/redixfashionportfolio/videos/ssstik.io_@nude_style_marsa_1760406130664.mp4',
@@ -112,6 +99,20 @@ export const fashionVideos = [
     client: 'Roar Fashion',
     category: 'Fashion Store',
     type: 'reel' // 9:16
+  },
+  {
+    id: 5,
+    path: '/redixfashionportfolio/videos/ssstik.io_@nude_style_marsa_1760406028218.mp4',
+    client: 'Nude Style Marsa',
+    category: 'Fashion Store',
+    type: 'animated' // 9:16
+  },
+  {
+    id: 6,
+    path: '/redixfashionportfolio/videos/ssstik.io_@nude_style_marsa_1760406037133.mp4',
+    client: 'Nude Style Marsa',
+    category: 'Fashion Store',
+    type: 'animated' // 9:16
   }
 ];
 
